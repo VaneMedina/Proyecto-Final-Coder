@@ -1,0 +1,254 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1600px;
+    text-align: center;
+}
+
+.contenedorForm{
+    width: 90%;
+    margin: 0 auto 200px auto;
+    overflow: hidden;
+    max-width: 1500px;
+    text-align: center;
+}
+
+h1{
+    font-size: 70px;
+    color: #143C8C;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px 0;
+}
+
+
+header{
+    background-image: url(imagenes/watts-roofing-supplies-Y71qSiW8e8U-unsplash.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+}
+
+header::before{
+    content: "";
+    display: block;
+    margin-top: 60px;
+}
+/*Estilos del menú de navegación*/
+
+nav{
+    width: 100%;
+    background: #ffff;
+    height: 60px;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    z-index: 10000000;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enlaces{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 12px 15px;
+}
+
+.enlaceInicio{
+    color: #143C8C;
+    font-weight: 900;
+    padding: 12px 15px;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    display: inline;
+}
+
+.cta{
+    display: inline-block;
+    width: 140px;
+    background-color: #143C8C;
+    text-align: center;
+    color: #ffff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.nav .imgLogo{
+    width: 50px;
+    height: 60px;
+}
+
+
+.contenidoHeader{
+    text-align: center;
+    padding-top: 220px;
+}
+
+.boton a{
+    margin: 50px 0;
+    display: inline-block;
+    width: 200px;
+    background-color: #143C8C;
+    text-align: center;
+    color: #ffff;
+    padding: 14px 0;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.textoHeader p{
+    color: #232323;
+    line-height: 24px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+/*FORMULARIO*/
+
+
+/*creacion de variables*/
+
+
+
+:root{
+    --colorTextos: #49454567;
+}
+
+h2{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+form{
+    width: 25%;
+    padding: 20px 0;
+}
+/*.form{
+    width: 100%;
+    margin: auto;
+}*/
+
+
+form .grupo{
+    position: relative;
+    margin: 40px;
+}
+
+
+input, textarea{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+input:focus{
+    outline: none;
+    color: rgb(94, 93, 93);
+}
+
+input:focus~label,
+input:valid~label, 
+textarea:focus~label, 
+textarea:valid~label{
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #2196F3;
+}
+label{
+    color:var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    transition: 0.4s ease all;
+    pointer-events: none;
+
+}
+
+.botonForm{
+    background: #143C8C;
+    display: block;
+    width: 200px;
+    border: none;
+    font-weight: 400;
+    border-radius: 5px;
+    color: #fff;
+    margin: 10px auto;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:1100px){
+    form{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px){
+    form{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:450px){
+    form{
+        width: 80%;
+    }
+}
+@media screen and (max-width:300px){
+    form{
+        width: 90%;
+        height: 100%;
+    }
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    background-color: rgb(65, 65, 65);
+    height: 300px;
+}
+
+.politicasPrivacidad{
+    height: 80px;
+    background-color: #305399;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}

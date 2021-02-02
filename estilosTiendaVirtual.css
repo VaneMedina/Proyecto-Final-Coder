@@ -1,0 +1,310 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1600px;
+}
+
+h1{
+    font-size: 50px;
+    color: #143C8C;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px 0;
+}
+
+header{
+    height: 800px;
+    background-image: url(Imagenes/directly-above-of-table-with-work-tools.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    position: relative;
+    z-index: 100;
+}
+
+
+header::before{
+    content: "";
+    display: block;
+    margin-top: 60px;
+}
+
+/*Estilos del menú de navegación*/
+
+
+nav{
+    width: 100%;
+    background: #ffff;
+    height: 60px;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    z-index: 300;
+}
+
+.nav{
+    /*Solo use flex-box en esta area porque si no no podia visualizar mayores cambios para mi menú*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enlaces{
+    text-decoration: none;
+    color: #232323;
+    font-weight: 500;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+
+.enlaceInicio{
+    color: #143C8C;
+    font-weight: 900;
+    padding: 12px 15px;
+    text-decoration: none;
+}
+.cta{
+    display: inline-block;
+    width: 140px;
+    background-color: #143C8C;
+    text-align: center;
+    color: #ffff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.nav .imgBuscar{
+    width: 50px;
+    height: 60px;
+}
+
+
+li{
+    list-style: none;
+    display: inline;
+}
+
+
+/*Fin de estilos del menú de navegación*/
+
+.contenidoHeader{
+    padding-top: 220px;
+    text-align: center;
+}
+
+.boton a{
+    display: inline-block;
+    width: 200px;
+    background-color: #143C8C;
+    color: #ffff;
+    padding: 14px 0;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+.textoHeader{
+    width: 700px;
+    margin: auto;
+}
+
+.textoHeader p{
+    color: black;
+    line-height: 24px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+/*articulo donde se encuentra la barra de la tienda (carrito etc)*/
+
+
+/*ESTA BARRA QUIERO QUE SE SUPERPONGA AL HEADER PERO QUEDE ABAJO DEL NAV CUANDO HAGA SCROLL*/
+.barraTienda{
+    height: 70px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    background: #143C8C;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    bottom: 200px;
+}
+
+main{
+    position: relative;
+    z-index: 200;
+    bottom: 30px;
+}
+
+
+.padreBarra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.padreBarra img{
+    width: 25px;
+    height: 25px;
+}
+
+
+/*.padreBarra > i{
+    color: blueviolet;
+    width: 30px;
+    position: relative;
+    z-index: 1000;
+}*/
+/*Fin articulo barra*/
+
+
+.contenedorMain{
+    padding: 30px 0;
+    text-align: center;
+    float: right;
+    margin-right: 100px;
+}
+
+.titulo{
+    margin: 0 0 50px 0;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.contenedorTarjetas{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.articulo{
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.articulo:hover{
+    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+    transition: 0.4s ease all
+}
+.articulo img {
+    width: 200px;
+    align-items: center;
+    height: 120px;
+}
+
+.articulo p{
+    padding: 35px 8px;
+    line-height: 25px;
+}
+
+.articulo a{
+    display: block;
+    margin: 20px auto;
+    width: 140px;
+    background-color: #143C8C;
+    text-align: center;
+    color: #ffff;
+    padding: 10px 0;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 3px;
+}
+
+.azul{
+    width: 100%;
+    background-color: #143C8C;
+    height: 420px;
+    text-align: center;
+    color: #ffff;
+}
+
+.tituloAzul{
+    font-weight: 600;
+    font-size: 50px;
+    padding: 50px 0 30px 0;
+}
+
+.azul a{
+    display: block;
+    margin: 30px auto;
+    width: 250px;
+    background-color: orange;
+    text-align: center;
+    color: #ffff;
+    padding: 20px 0;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+.parrafoAzul{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+footer{
+    width: 100%;
+    background-color: #77797B;
+    height: 300px;
+}
+
+.politicasPrivacidad{
+    height: 80px;
+    background-color: #305399;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+aside h3{
+    font-weight: 400;
+    font-size: 12px;
+}
+aside{
+    height: 1000px;
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, .2);
+    float: left;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+aside ul li{
+    display: block;
+    margin: 25px 0;
+    font-weight: 700;
+}
+
+aside ul div li{
+    display: block;
+    margin: 15px 0 15px 15px;
+    font-weight: 300;
+}
+
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
