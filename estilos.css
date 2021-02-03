@@ -30,7 +30,7 @@ header {
 
 /*Estilos del menú de navegación*/
 
-nav .navbar .navbar-expand-lg .navbar-light .bg-light {
+nav .navbar .fixed-top .navbar-expand-lg .navbar-light .bg-light{
     width: 100%;
     height: 40px;
     border-bottom: 1px solid transparent;
@@ -112,7 +112,7 @@ nav .navbar .navbar-expand-lg .navbar-light .bg-light {
 .titulo {
     margin: 0 0 80px 0;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .tituloTercero {
@@ -126,21 +126,29 @@ nav .navbar .navbar-expand-lg .navbar-light .bg-light {
 }
 
 .articulo {
-    width: 350px;
     overflow: hidden;
 }
 
-.articulo>i {
+.svg-inline--fa.fa-w-20 {
     color: #232323;
     font-size: 60px;
     background: #fff;
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 3em;
+    height: 3em;
     text-align: center;
     padding-top: 90px;
-    /*border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);*/
+}
+
+.svg-inline--fa.fa-w-16{
+    color: #232323;
+    font-size: 60px;
+    background: #fff;
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    padding-top: 90px;
 }
 
 /*
@@ -179,8 +187,7 @@ nav .navbar .navbar-expand-lg .navbar-light .bg-light {
 }
 
 
-
-.azul {
+.azul{
     width: 100%;
     background-color: #143C8C;
     height: 420px;
@@ -191,7 +198,7 @@ nav .navbar .navbar-expand-lg .navbar-light .bg-light {
 
 .tituloAzul {
     font-weight: 600;
-    font-size: 50px;
+    font-size: 3em;
     padding: 50px 0 30px 0;
 }
 
@@ -237,23 +244,36 @@ html, body{
 }
 
 
-.carousel-item, .active , .carousel-inner{
+.carousel, .active , .carousel-inner{
     height: 100%;
-
 }
 
-.carousel-caption p {
-    margin-bottom: 200px;
-    text-align: center;
-    width: 400px;
-    align-items: center;
+.imgcarousel{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-
-@media (min-width: 360px) {
-    section{
+@media (max-width: 420px)and (min-width: 250px){
+    .contenedorTarjetas{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+    }
+    .articulo{
+        margin-bottom: 30px;
+    }
+    .azul a{
+        width: 60%;
+        margin: 10px auto;
+        padding: 10px 0;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 30px;
+        font-size: 1,5em;
+    }
+    .azul p{
+        font-size: 2em;
     }
 }
+
+
