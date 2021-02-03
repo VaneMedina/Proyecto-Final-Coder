@@ -23,19 +23,15 @@ h1 {
 }
 
 
-header{
-    height: 10%;
-    background-repeat: no-repeat;
-    background-size: cover;
+header {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
     z-index: 0;
 }
 
 /*Estilos del menú de navegación*/
 
-nav .navbar .navbar-expand-lg .navbar-light .bg-light{
+nav .navbar .navbar-expand-lg .navbar-light .bg-light {
     width: 100%;
-    background: red;
     height: 40px;
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
@@ -46,18 +42,18 @@ nav .navbar .navbar-expand-lg .navbar-light .bg-light{
 
 
 
-.navbar-brand img{
+.navbar-brand img {
     width: 50px;
     height: 60px;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
-.navbar-light .navbar-nav .nav-item.active .nav-link{
+.navbar-light .navbar-nav .nav-item.active .nav-link {
     background: #232323;
     color: #ffff;
 }
 
-.navbar-light .navbar-nav .nav-item .nav-link{
+.navbar-light .navbar-nav .nav-item .nav-link {
     color: #232323;
     padding: 5px 15px;
 }
@@ -236,15 +232,28 @@ footer {
     font-size: 20px;
 }
 
-
-.carousel-item {
-    height: 10%;
-    width: 100%;
+html, body{
+    height: 100%;
 }
 
-.carousel-caption p{
+
+.carousel-item, .active , .carousel-inner{
+    height: 100%;
+
+}
+
+.carousel-caption p {
     margin-bottom: 200px;
     text-align: center;
     width: 400px;
     align-items: center;
+}
+
+
+@media (min-width: 360px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
