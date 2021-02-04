@@ -35,10 +35,6 @@ header {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
 }
 
-.navbar-collapse{
-    width: initial;
-}
-
 
 .navbar-brand img {
     width: 50px;
@@ -61,7 +57,6 @@ header {
 }
 
 .cta {
-    display: inline-block;
     width: 140px;
     background-color: #143C8C;
     text-align: center;
