@@ -163,8 +163,7 @@ header {
 
 .articulo p {
     padding: 15px 8px;
-    line-height: 25px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .articulo a {
@@ -249,10 +248,26 @@ html, body{
     margin-top: 50px;
 }
 
-@media (max-width: 570px) and (min-width: 250px){
+@media (max-width: 1000px){
     .contenedorTarjetas{
         display: flex;
         flex-direction: column;
+    }
+    .contenedorTarjetas img{
+        width: 100%;
+        height: auto;
+    }
+    .contenedorTarjetas p{
+        font-size: 3.9vw;
+        font-weight: 500;
+    }
+    .contenedorTarjetas h3{
+        font-size: 4.5vw;
+        font-weight: 800;
+    }
+    .contenedorTarjetas a{
+        font-size: 4vw;
+        width: 35%;
     }
     .articulo{
         margin-bottom: 30px;
@@ -264,19 +279,13 @@ html, body{
         text-decoration: none;
         font-weight: 700;
         border-radius: 30px;
-        font-size: 1,5em;
+        font-size: 1em;
     }
     .azul p{
-        font-size: 2em;
+        font-size: 1.5em;
     }
     html, body{
         height: 80%;
-    }
-}
-
-@media (max-width: 1800px) and (min-width: 1260px){
-    .articulo p{
-        width: 350px;
     }
 }
 
@@ -286,6 +295,7 @@ html, body{
     }
 
 }
+
 
 /*ESTILOS DE MAIN DE PRODUCTOS*/
 
