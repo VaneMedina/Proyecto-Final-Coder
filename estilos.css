@@ -12,7 +12,7 @@ body {
     width: 90%;
     margin: auto;
     overflow: hidden;
-    max-width: 1600px;
+    max-width: 1800px;
 }
 
 h1 {
@@ -30,16 +30,14 @@ header {
 
 /*Estilos del menú de navegación*/
 
-nav .navbar .fixed-top .navbar-expand-lg .navbar-light .bg-light{
-    width: 100%;
-    height: 40px;
+.navbar{
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
-    position: fixed;
-    top: 0;
-    z-index: 10000000;
 }
 
+.navbar-collapse{
+    width: initial;
+}
 
 
 .navbar-brand img {
@@ -49,7 +47,7 @@ nav .navbar .fixed-top .navbar-expand-lg .navbar-light .bg-light{
 
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
 .navbar-light .navbar-nav .nav-item.active .nav-link {
-    background: #232323;
+    background: #143C8C;
     color: #ffff;
 }
 
@@ -58,7 +56,9 @@ nav .navbar .fixed-top .navbar-expand-lg .navbar-light .bg-light{
     padding: 5px 15px;
 }
 
-
+.nav-item{
+    font-weight: 500;
+}
 
 .cta {
     display: inline-block;
@@ -105,8 +105,11 @@ nav .navbar .fixed-top .navbar-expand-lg .navbar-light .bg-light{
 
 /*Sección de cards*/
 .contenedorMain {
-    padding: 100px 0;
     text-align: center;
+    width: 90%;
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 100px auto;
 }
 
 .titulo {
@@ -137,7 +140,7 @@ nav .navbar .fixed-top .navbar-expand-lg .navbar-light .bg-light{
     width: 3em;
     height: 3em;
     text-align: center;
-    padding-top: 90px;
+    padding-top: 80px;
 }
 
 .svg-inline--fa.fa-w-16{
@@ -148,13 +151,9 @@ nav .navbar .fixed-top .navbar-expand-lg .navbar-light .bg-light{
     width: 3em;
     height: 3em;
     text-align: center;
-    padding-top: 90px;
+    padding-top: 80px;
 }
 
-/*
-.articulo:hover{
-    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
-}*/
 
 .articulo img {
     width: 320px;
@@ -227,7 +226,7 @@ nav .navbar .fixed-top .navbar-expand-lg .navbar-light .bg-light{
 
 footer {
     width: 100%;
-    background-color: rgb(65, 65, 65);
+    background-color: #77797B;
     height: 300px;
 }
 
@@ -240,11 +239,11 @@ footer {
 }
 
 html, body{
-    height: 100%;
+    height: 97%;
 }
 
 
-.carousel, .active , .carousel-inner{
+.carousel, .active, .carousel-item , .carousel-inner{
     height: 100%;
 }
 
@@ -252,9 +251,10 @@ html, body{
     height: 100%;
     object-fit: cover;
     object-position: center;
+    margin-top: 50px;
 }
 
-@media (max-width: 420px)and (min-width: 250px){
+@media (max-width: 570px) and (min-width: 250px){
     .contenedorTarjetas{
         display: flex;
         flex-direction: column;
@@ -264,7 +264,7 @@ html, body{
     }
     .azul a{
         width: 60%;
-        margin: 10px auto;
+        margin: 30px auto 10px auto;
         padding: 10px 0;
         text-decoration: none;
         font-weight: 700;
@@ -274,6 +274,60 @@ html, body{
     .azul p{
         font-size: 2em;
     }
+    html, body{
+        height: 80%;
+    }
 }
 
+@media (max-width: 1800px) and (min-width: 1260px){
+    .articulo p{
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px){
+    .navbar-expand-lg .cta{
+        display: none;
+    }
+
+}
+
+/*ESTILOS DE MAIN DE PRODUCTOS*/
+
+.contenedorMain h2{
+    margin-bottom: 90px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color: #232323;
+}
+
+.contenedorProductos{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    overflow: hidden;
+    background: #ffff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.contenedorProductos img{
+    width: 600px;
+    height: 400px;
+    padding: 20px 0;
+}
+
+.contenidoProductos{
+    width: 300px;
+    height: 400px;
+    padding: 20px 0;
+}
+
+.contenedorProductos h3{
+    margin: 50px 0;
+    color: #143C8C;
+}
 
