@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>la Casa de las Chapas | Materiales para la construcción</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-a11y="true"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -14,17 +15,16 @@
 </head>
 <body>
     <header>
-        <div class="">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-0">
                 <div class="container-fluid contenedor">
-                    <a class="navbar-brand" href="servicios.html"><img src="imagenes/bxl-c-plus-plus.svg" alt=""></a>
+                    <a class="navbar-brand" href="index.html"><img src="imagenes/bxl-c-plus-plus.svg" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                             </li>
@@ -42,7 +42,6 @@
                     <a class="cta nav-link" href="contacto.html">Contacto</a>
                 </div>
             </nav>
-        </div>
     </header>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
@@ -52,13 +51,13 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="Imagenes/directly-above-of-table-with-work-tools.jpg" class="d-block w-100 imgcarousel" alt="...">
+                <img src="Imagenes/romeo-a-aWgpnQfvk8w-unsplash (1).jpg" class="d-block w-100 imgcarousel" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="Imagenes/portrait-young-worker-hard-hat-large-metalworking-plant.jpg" class="d-block w-100 imgcarousel" alt="...">
+                <img src="Imagenes/clark-van-der-beken-IF0g-TIBCKg-unsplash.jpg" class="d-block w-100 imgcarousel" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="Imagenes/yellow-tools-frame-with-copy-space.jpg" class="d-block w-100 imgcarousel" alt="...">
+                <img src="Imagenes/patrick-schneider-O02B5Dzr52U-unsplash (1).jpg" class="d-block w-100 imgcarousel" alt="...">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
@@ -70,36 +69,88 @@
     </div>
     <main>
         <section>
-            <article>
-                <div class="contenedor">
-                    <p>Servicios</p>
-                </div>
-            </article>
-            <article>
-                <div class="contenedor">
-                    <table border="5" cellpadding="5" cellspacing="5">
-                        <tr>
-                            <th>Nombre producto</th>
-                            <th>Recomendaciones y comentarios</th>
-                        </tr>
-                        <tr>
-                            <td>Hierro nevado</td>
-                            <td>
-                                <ol>
-                                    <li>Adherencia de los compuestos del hormigón</li>
-                                    <li>Presenta resistencia al estiramiento</li>
-                                    <li>La mejor solución para el hormigón armado</li>
-                                </ol>
-                            </td>
-                        </tr>
-                    </table> <br>
+            <article class="cardContenedor">
+                <div class="contenedorMain cardContenedor">
+                    <h2 class="titulo">Nuestros servicios</h2>
+                    <div class="contenedorItem">
+                        <div class="cardItem">
+                            <figure class="cardImg">
+                                <i class="fas fa-truck"></i>
+                            </figure>
+                            <h3 class="tituloCard">Envios a domicilio</h3>
+                            <p class="parrafoCard">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis esse quos laboriosam impedit ipsum adipisci, nostrum amet numquam nesciunt  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolores..
+                            </p>
+                        </div>
+
+                        <div class="cardItem">
+                            <figure class="cardImg">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </figure>
+                            <h3 class="tituloCard">Ahorrás pagando en efectivo</h3>
+                            <p class="parrafoCard">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis esse quos laboriosam impedit ipsum adipisci, nostrum amet numquam nesciunt  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolores..
+                            </p>
+                        </div>
+
+                        <div class="cardItem">
+                            <figure class="cardImg">
+                                <i class="fas fa-thumbtack"></i>
+                            </figure>
+                            <h3 class="tituloCard">Planchado y cortado</h3>
+                            <p class="parrafoCard">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis esse quos laboriosam impedit ipsum adipisci, nostrum amet numquam nesciunt  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolores..
+                            </p>
+                        </div>
+
+                        <div class="cardItem">
+                            <figure class="cardImg">
+                                <i class="fas fa-phone-alt"></i>
+                            </figure>
+                            <h3 class="tituloCard">Varios canales de atención</h3>
+                            <p class="parrafoCard">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis esse quos laboriosam impedit ipsum adipisci, nostrum amet numquam nesciunt  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolores..
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
-    </main> <br> <br>
+    </main>
     <footer>
-        <h3>Footer</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md px-10">
+                    <h5>Contacto</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Social media</h5>
+                    <li>Facebook</li>
+                    <li>WhatsApp</li>
+                    <li>Instagram</li>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Quiks links</h5>
+                    <li>Facebook</li>
+                    <li>WhatsApp</li>
+                    <li>Instagram</li>
+                </div>
+                <div class="col-12 col-md">
+                    <form action="">
+                        <fieldset>
+                            <h5>NewsLetter</h5>
+                            <label for="email" class="formlabel">Email</label>
+                            <input type="email" id="email" class="form-control form-control-sm">
+                            <input type="submit" class="buttonDark">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. &copy; 2021. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
-    <div class="politicasPrivacidad">&copy; 2021. Todos los derechos reservados.</div>
 </body>
 </html>
