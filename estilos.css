@@ -16,7 +16,7 @@ body {
 }
 
 #imgHeader{
-    background-image: url(imagenes/romeo-a-aWgpnQfvk8w-unsplash\ \(1\).jpg);
+    background-image: url(imagenes/jeriden-villegas-VLPUm5wP5Z0-unsplash\ \(1\).jpg);
     min-height: 70%;
     background-attachment: fixed;
     background-position: center;
@@ -375,16 +375,14 @@ html, body{
     .contenidoProductos p{
         font-size: 5vw;
     }
+    .cardItem{
+        margin-bottom: 3em;
+    }
 }
 
 
 
 /*ESTILOS DE MAIN DE SERVICIOS*/
-
-.cardContenedor{
-    background: #ffff;
-    padding: 1px 0 50px 0;
-}
 
 .contenedorItem{
     width: 98%;
@@ -413,7 +411,7 @@ html, body{
 
 
 
- .cardItem{
+.cardItem{
     background: #143C8C;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
     display: flex;
