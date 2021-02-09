@@ -119,7 +119,6 @@ header {
 .articulo {
     overflow: hidden;
 }
-/*transition: transform .2s;*/
 
 
 
@@ -201,66 +200,6 @@ html, body{
     margin-top: 70px;
 }
 
-@media (max-width: 1000px){
-    .contenedorTarjetas{
-        display: flex;
-        flex-direction: column;
-    }
-    .contenedorTarjetas img{
-        width: 100%;
-        height: auto;
-    }
-    .contenedorTarjetas p{
-        font-size: 5vw;
-    }
-    .contenedorTarjetas h2{
-        font-size: 6.5vw;
-        font-weight: 600;
-    }
-    .contenidoProductos h2{
-        font-size: 6.5vw;
-        font-weight: 600;
-    }
-    .contenedorTarjetas a{
-        font-size: 5vw;
-        width: 60%;
-        font-weight: 500;
-    }
-    .contenedorMain .titulo{
-        font-size: 8vw;
-        font-weight: 800;
-    }
-    .articulo{
-        margin-bottom: 30px;
-    }
-    html, body{
-        height: 90%;
-    }
-    .principalContenedor .parrafoPrincipal{
-        font-size: 7.5vw;
-        font-weight: 800;
-        padding-top: 1em;
-    }
-    .row{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        text-align: center;
-    }
-    h1{
-        font-size: 10.5vw;
-    }
-    .form form{
-        width: 100%;
-    }
-}
-
-@media (max-width: 991px){
-    .navbar-expand-lg .cta{
-        display: none;
-    }
-
-}
 
 
 /*ESTILOS DE MAIN DE PRODUCTOS*/
@@ -304,21 +243,6 @@ html, body{
     width: 18em;
 }
 
-@media (max-width: 535px){
-    .contenedorProductos{
-        display: flex;
-        flex-direction: column;
-        height: 35em;
-    }
-    .contenidoProductos p{
-        font-size: 5vw;
-    }
-    .cardItem{
-        margin-bottom: 3em;
-    }
-}
-
-
 
 /*ESTILOS DE MAIN DE SERVICIOS*/
 
@@ -353,20 +277,6 @@ html, body{
     grid-area: card4;
 }
 
-
-
-
-
-@media (max-width: 1000px){
-    .contenedorItem{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .info{
-        grid-column: 1/6;
-    }
-}
 
 
 .cardItem{
@@ -579,9 +489,9 @@ fieldset{
     background-color: #f3f3f3;
     width: 60%;
     border-radius: .5em;
-    align-self: center;
     text-align: center;
     padding: 25px;
+    float: right;
 }
 
 
@@ -679,9 +589,21 @@ a .face:hover, a .wsp:hover{
 
 .textoContacto{
     line-height: 2em;
+    margin-bottom: 3em;
 }
 
+#contacto{
+    display: none;
+}
+
+
+
+
+
 @media (max-width: 1000px){
+    #contacto{
+        display: unset;
+    }
     .contenedorTarjetas{
         display: flex;
         flex-direction: column;
@@ -735,9 +657,26 @@ a .face:hover, a .wsp:hover{
     }
 }
 
+
+
 @media (max-width: 991px){
     .navbar-expand-lg .cta{
         display: none;
     }
 
+}
+
+
+@media (max-width: 510px){
+    .contenedorProductos{
+        display: flex;
+        flex-direction: column;
+        height: 35em;
+    }
+    .contenidoProductos p{
+        font-size: 5vw;
+    }
+    .cardItem{
+        margin-bottom: 3em;
+    }
 }
