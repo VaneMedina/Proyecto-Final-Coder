@@ -250,6 +250,9 @@ html, body{
     h1{
         font-size: 10.5vw;
     }
+    .form form{
+        width: 100%;
+    }
 }
 
 @media (max-width: 991px){
@@ -660,3 +663,64 @@ a .wsp{
 }
 
 
+
+@media (max-width: 1000px){
+    .contenedorTarjetas{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedorTarjetas img{
+        width: 100%;
+        height: auto;
+    }
+    .contenedorTarjetas p{
+        font-size: 5vw;
+    }
+    .contenedorTarjetas h2{
+        font-size: 6.5vw;
+        font-weight: 600;
+    }
+    .contenidoProductos h2{
+        font-size: 6.5vw;
+        font-weight: 600;
+    }
+    .contenedorTarjetas a{
+        font-size: 5vw;
+        width: 60%;
+        font-weight: 500;
+    }
+    .contenedorMain .titulo{
+        font-size: 8vw;
+        font-weight: 800;
+    }
+    .articulo{
+        margin-bottom: 30px;
+    }
+    html, body{
+        height: 90%;
+    }
+    .principalContenedor .parrafoPrincipal{
+        font-size: 7.5vw;
+        font-weight: 800;
+        padding-top: 1em;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+    }
+    h1{
+        font-size: 10.5vw;
+    }
+    .form form{
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px){
+    .navbar-expand-lg .cta{
+        display: none;
+    }
+
+}
