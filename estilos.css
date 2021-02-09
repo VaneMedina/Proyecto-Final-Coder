@@ -197,8 +197,8 @@ html, body{
 .imgcarousel{
     height: 100%;
     object-fit: cover;
-    object-position: center;
-    margin-top: 50px;
+    object-position: top;
+    margin-top: 70px;
 }
 
 @media (max-width: 1000px){
@@ -655,14 +655,31 @@ fieldset{
 }
 
 a .wsp{
-    color: #ffff;
     background: #00bb2d;
     border-radius: 6px;
     padding: 1px;
-    margin-bottom: 5px;
+    margin: 0 10px 10px 0;
+    width: 2em;
+    height: 2em;
 }
 
+a .face{
+    background: #3b5998;
+    border-radius: 6px;
+    padding: 1px;
+    margin-right: 10px;
+    width: 2em;
+    height: 2em;
+}
 
+a .face:hover, a .wsp:hover{
+    transform: scale(1.3);
+    transition: all 0.5s;
+}
+
+.textoContacto{
+    line-height: 2em;
+}
 
 @media (max-width: 1000px){
     .contenedorTarjetas{
