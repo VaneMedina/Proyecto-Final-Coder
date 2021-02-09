@@ -5,74 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>la Casa de las Chapas | Materiales para la construcción</title>
-    <link rel="stylesheet" href="contacto.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+</script>
+    <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
     <header>
-        <nav>
-            <div class="contenedor nav">
-                <div class="logo">
-                    <img class="imgLogo" src="imagenes/bxl-c-plus-plus.svg" alt="">
-                </div>
-                <div class="enlacesHeader">
-                    <ul>
-                        <li><a class="enlaces" href="index.html">Inicio</a></li>
-                        <li><a class="enlaces" href="productos.html">Productos</a></li>
-                        <li><a class="enlaces" href="servicios.html">Servicios</a></li>
-                        <li><a class="enlaces" href="tiendaVirtual.html">Tienda virtual</a></li>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-0">
+            <div class="container-fluid contenedor">
+                <a class="navbar-brand" href="index.html"><img src="imagenes/bxl-c-plus-plus.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tiendaVirtual.html">Tienda virtual</a>
+                        </li>
                     </ul>
                 </div>
-                <div>
-                    <a class="cta" href="contacto.html">Contacto</a>
-                </div>
+                <a class="cta nav-link" href="contacto.html">Contacto</a>
             </div>
         </nav>
-        <div class="contenedor">
-            <div class="contenidoHeader">
-                <div class="textoHeader">
-                    <h1>la Casa de las Chapas</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reprehenderit <br>
-                        eveniet ullam vitae hic reiciendis voluptatibus cupiditate illo tempore modi <br>
-                    </p>
-                </div>
-                <div class="boton">
-                    <a href="#">Presupuesto</a>
-                </div>
-            </div>
-        </div>
     </header>
+    <div id="imgHeader"></div>
     <main>
-        <section>
-            <article class="contenedorForm">
-                <form action="">
-                    <div class='form'>
-                        <h2>Formulario</h2>
+        <section class="container margenBotton">
+            <article class="row">
+                <div class="col form">
+                    <form action="">
+                        <h2>Envianos tu consulta</h2>
                         <div class='grupo'>
-                            <input type="text" name='' id='' autocomplete="on" required><span class='barra'></span>
+                            <input type="text" name='' id='' autocomplete="on" required>
                             <label>Nombre</label>
                         </div>
                         <div class='grupo'>
-                            <input type="name" name='' id='' required autocomplete="on"><span class='barra'></span>
+                            <input type="name" name='' id='' required autocomplete="on">
                             <label>Apellido</label>
                         </div>
                         <div class='grupo'>
-                            <input type="email" name='' id='' required autocomplete="on"><span class='barra'></span>
+                            <input type="email" name='' id='' required autocomplete="on">
                             <label>Email</label>
                         </div>
                         <div class='grupo'>
-                            <textarea name="" id="" rows='3' required></textarea><span class='barra'></span>
+                            <textarea name="" id="" rows='3' required></textarea>
                             <label>Mensaje</label>
                         </div>
-                        <input type="checkbox" name="" id="">"Acepto terminos y condiciones"
                         <button class="botonForm" type='submit'>Enviar consulta</button>
-                    </div>
                 </form>
+            </div>
+            <div class="col textoContacto">
+                <h2>Contacto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ab incidunt quia hic velit officia. <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, numquam?
+                <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Eaque unde fugiat totam magnam, pariatur iure vitae. Ipsa nobis iure nesciunt!</p>
+                <p> Podes escribirnos a nuestro WhatsApp <a target="_blank" href="https://wa.me/5492233018351"><img class="wsp" src="imagenes/whatsapp-logo-24.png" alt=""></a>
+                </p>  
+            </div>
             </article>
         </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.6485142284723!2d-57.542359184073156!3d-38.00865815299462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc3d115240e5%3A0x105dbd69df21f11f!2sAv.%20Col%C3%B3n%201600%2C%20B7600FXV%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1612675604161!5m2!1ses!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </main>
     <footer>
         <div class="container">

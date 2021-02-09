@@ -42,7 +42,7 @@ h1 {
 }
 
 .textoHeader{
-    padding: 5%;
+    padding: 2%;
     text-align: center;
 }
 header {
@@ -187,74 +187,8 @@ p span{
     width: 5%;}
 }
 
-
-
-footer {
-    color: #ffff;
-    background: #143C8C;
-    padding: 20px 10px 0px 10px;
-}
-
-footer h5{
-    margin-top: 10px;
-    font-weight: 700;
-}
-
-footer li{
-    list-style: none;
-    font-size: 13px;
-}
-
-
-fieldset{
-    border: none;
-}
-
-.formlabel{
-    font-size: 14px;
-    color: #ffffff;
-    margin-top: 5px;
-    margin-bottom: 0;
-}
-
-.form-control {
-    background-color: transparent;
-    color: white;
-    border-radius: 0;
-    border-color: #ffffff;
-    border-width: 0 0 1px 0;
-    border-style: none none solid none;
-    box-shadow: none;
-}
-
-.buttonDark{
-    background-color: transparent;
-    border: 1px solid;
-    font-size: 13px;
-    padding: 5px 15px 5px 15px;
-    overflow: hidden;
-    text-align: center;
-    transition: all 0.5s;
-    color: #ffffff;
-    border-color: #ffffff;
-    margin-top: 1em;
-}
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-
-.footer-copyright {
-    padding: 20px !important;
-    text-align: center;
-}
-
 html, body{
-    height: 97%;
+    height: 90%;
 }
 
 
@@ -302,7 +236,7 @@ html, body{
         margin-bottom: 30px;
     }
     html, body{
-        height: 95%;
+        height: 90%;
     }
     .principalContenedor .parrafoPrincipal{
         font-size: 10vw;
@@ -398,6 +332,27 @@ html, body{
     ".       card4   .    "
     ;
 }
+
+.cardItem:nth-last-of-type(1){
+    grid-area: card1;
+}
+
+.cardItem:nth-last-of-type(2){
+    grid-area: card2;
+}
+
+.cardItem:nth-last-of-type(3){
+    grid-area: card3;
+}
+
+.cardItem:nth-last-of-type(4){
+    grid-area: card4;
+}
+
+
+
+
+
 @media (max-width: 1000px){
     .contenedorItem{
         display: flex;
@@ -408,7 +363,6 @@ html, body{
         grid-column: 1/6;
     }
 }
-
 
 
 .cardItem{
@@ -472,21 +426,6 @@ html, body{
 }
 
 
-.cardItem:nth-last-of-type(1){
-    grid-area: card1;
-}
-
-.cardItem:nth-last-of-type(2){
-    grid-area: card2;
-}
-
-.cardItem:nth-last-of-type(3){
-    grid-area: card3;
-}
-
-.cardItem:nth-last-of-type(4){
-    grid-area: card4;
-}
 
 .parrafoCard{
     margin-top: 5%;
@@ -562,3 +501,161 @@ html, body{
     width: 100%;
     margin-bottom: 4%;
 }
+
+iframe{
+    width: 100%;
+    height: 30em;
+    margin-top: 5%;
+}
+
+/*FOOTER*/
+
+footer {
+    color: #ffff;
+    background: #143C8C;
+    padding: 20px 10px 0px 10px;
+}
+
+footer h5{
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+footer li{
+    list-style: none;
+    font-size: 13px;
+}
+
+
+fieldset{
+    border: none;
+}
+
+.formlabel{
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.form-control {
+    background-color: transparent;
+    color: white;
+    border-radius: 0;
+    border-color: #ffffff;
+    border-width: 0 0 1px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+}
+
+.buttonDark{
+    background-color: transparent;
+    border: 1px solid;
+    font-size: 13px;
+    padding: 5px 15px 5px 15px;
+    overflow: hidden;
+    text-align: center;
+    color: #ffffff;
+    border-color: #ffffff;
+    margin-top: 1em;
+}
+
+
+.footer-copyright {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+/*Main contacto*/
+
+
+.form form{
+    background-color: #f3f3f3;
+    width: 60%;
+    border-radius: .5em;
+    align-self: center;
+    text-align: center;
+    padding: 25px;
+}
+
+
+
+.form .grupo{
+    position: relative;
+    margin: 40px 0;
+}
+
+
+.grupo input, textarea{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #49454567;
+    resize: none;
+}
+
+
+.grupo input:focus{
+    outline: none;
+    color: rgb(94, 93, 93);
+}
+
+.grupo input:focus~label,
+.grupo input:valid~label, 
+.grupo textarea:focus~label, 
+.grupo textarea:valid~label{
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #2196F3;
+}
+
+.grupo label{
+    color:#49454567;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    transition: 0.4s ease all;
+    pointer-events: none;
+
+}
+
+.botonForm{
+    background: #143C8C;
+    display: block;
+    width: 200px;
+    border: none;
+    font-weight: 400;
+    border-radius: 5px;
+    color: #fff;
+    margin: 10px auto;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+
+.margenBotton{
+    margin-top: 5%;
+}
+
+.textoContacto h2{
+    margin-bottom: 1em;
+    padding-top: 20px;
+}
+
+a .wsp{
+    color: #ffff;
+    background: #00bb2d;
+    border-radius: 6px;
+    padding: 1px;
+    margin-bottom: 5px;
+}
+
+
